@@ -413,6 +413,8 @@ app.set('views','static');
 // 配置默认模板后缀名字
 app.set('view engine','html');
 
+res.render('aaa/result',{...req.body,arr:[1,2,3,4,5],html:'<h1>我很帅</h1>'})
+
 <!--引用某个模板-->
 <%include ../header.ejs%>
 
